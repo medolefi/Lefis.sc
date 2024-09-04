@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lefis - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./lefis logo.png">
+</head>
+<header>
+    <!-- Add your logo with a link to the principal page -->
+    <a href="home.html" class="logo">
+        <img src="./lefis logo.png" alt="Lefis Logo" />
+    </a>
+    <nav>   
+        <!-- Add more links as needed -->
+    </nav>
+</header>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-brand">Lefis</div>
+        <div class="navbar-menu">
+            <a href="profile.html">البروفيل</a>
+            <a href="friends.html">الصحاب</a>
+            <a href="messages.html">الرسائل</a>
+            <a href="notifications.html">الاشعارات</a>
+            <a href="settings.html">الاعدادات </a>
+        </div>
+    </div>
+    <div class="content">
+        <button class="post-button" onclick="openPostModal()">Post اعمل</button>
+        <div id="feed" class="feed">
+            <!-- New posts will be inserted here -->
+        </div>
+    </div>
+
+    <!-- Modal for creating a post -->
+    <div id="postModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closePostModal()">&times;</span>
+            <textarea id="postInput" placeholder="شنوة في بالك"></textarea>
+            <button class="button" onclick="submitPost()">Post</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
+
